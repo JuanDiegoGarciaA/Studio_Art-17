@@ -196,24 +196,25 @@ h2{
     display: inline-block;
     position: relative;
     color: white;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 h2::after, h2::before{
     content:'';
     position: absolute;
-    width: 100%;
+    width: 120px;
     height: 4px;
     background-color: white;
     top: 0.6em;
 }
 
 h2::before{
-    left: 140px;
+    left: 150px;
+    padding-right: 5px;
 }
 
 h2::after{
-    right: 140px;
+    right: 150px;
 }
 /* Estilos para galeria */
 
@@ -255,6 +256,7 @@ h2::after{
 .boton a{
     text-decoration: none;
     color: white;
+    background-color: #575757;
     font-size: 28px;
     border-radius: 20px;
     padding: 5px 20px;
@@ -262,8 +264,62 @@ h2::after{
 }
 
 .boton a:hover{
+    background: white;
     color: #575757;
-    background-color: white;
     padding: 10px 25px;
-    transition: .3s;
+    transition: .6s;
+}
+
+/* img center*/
+
+.img_center{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img_c{
+    max-width: 100%;
+}
+
+/*caja bordes*/
+
+.border{
+    border-style: none none solid none;
+    border-color: white;
+    border-width: 0px 0px .01px 0px;
+}
+
+/*Textos*/
+.preguntas{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+
+.parrafo{
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+    max-width: 25%;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 952px) {
+    .parrafo{
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .parrafo{
+        max-width: 50%;
+    }
 }
