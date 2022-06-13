@@ -209,12 +209,12 @@ h2::after, h2::before{
 }
 
 h2::before{
-    left: 150px;
+    left: 172px;
     padding-right: 5px;
 }
 
 h2::after{
-    right: 150px;
+    right: 172px;
 }
 /* Estilos para galeria */
 
@@ -421,4 +421,46 @@ footer .creado-por{
     header .barra-busqueda{
         width:100%;
     }
+}
+
+/* ---------------------------------Seccion Tatuajes-----------------------------------------------*/
+
+.TextT{
+    font-size: 35px;
+    color: #fff;
+}
+.TextTa{
+    font-size: 35px;
+    color: #fff;
+    padding-top: 2%;
+    border-style: solid none none none;
+    border-color: white;
+    border-width: .01px 0px 0px 0px;
+}
+
+.TextTa a{
+    color: #c13584;
+}
+
+@media screen and (max-width: 952px) {
+    .TextT{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .TextT{
+        font-size: 28px;
+    }
+}
+
+/* img centerT*/
+
+.img_centerT{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img_cT{
+    max-width: 300px;
 }
