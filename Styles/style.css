@@ -489,8 +489,6 @@ label{
     color: #fff;
 }
 
-
-
 .center-form input{
     width: 100%;
     padding: 8px;
@@ -521,21 +519,18 @@ label{
     transition: .6s;
 }
 
-.center-form input[type="file"]{
-    text-decoration: none;
-    color: white;
-    background-color: #575757;
-    font-size: 28px;
-    border-radius: 20px;
-
+@media(max-width:768px){
+    .form{
+        width: 100%;
+        height: 100%;
+    }
 }
 
-
-.center-form input[type="file"]:hover{
-    background: white;
-    color: #575757;
-    padding: 10px 25px;
-    transition: .6s;
+@media(max-width:1024px){
+    .form{
+        width: 100%;
+        height: 80%;
+    }
 }
 
 
@@ -602,4 +597,22 @@ label{
     .caja p{
         font-size: 30px;
     }
+}
+
+/*--------------------------Diseños----------------*/
+
+.insta{
+    color: #c13584;
+}
+
+.wh{
+    color:#0df053 ;
+}
+
+.fc{
+    color: #405c9c;
+}
+
+.sep{
+    margin-top: 3%;
 }
