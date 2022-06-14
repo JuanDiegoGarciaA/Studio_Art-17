@@ -442,15 +442,22 @@ footer .creado-por{
     color: #c13584;
 }
 
-@media screen and (max-width: 952px) {
+@media (min-width: 768px) {
     .TextT{
         font-size: 30px;
     }
 }
 
-@media screen and (max-width: 1250px) {
+@media (min-width: 1280px) {
     .TextT{
         font-size: 28px;
+    }
+}
+
+@media (min-width: 420px){
+    .TextT{
+        width: 100%;
+        color: #0df053;
     }
 }
 
@@ -518,4 +525,87 @@ label{
     color: #575757;
     padding: 10px 25px;
     transition: .6s;
+}
+
+.center-form input[type="file"]{
+    text-decoration: none;
+    color: white;
+    background-color: #575757;
+    font-size: 28px;
+    border-radius: 20px;
+
+}
+
+
+.center-form input[type="file"]:hover{
+    background: white;
+    color: #575757;
+    padding: 10px 25px;
+    transition: .6s;
+}
+
+
+/* ---------------------------------Seccion preguntas-----------------------------------------------*/
+
+.contenido{
+    margin: 3px;
+    margin-top: 5%;
+}
+
+.caja{
+    display: table-cell;
+    padding: 10px;
+}
+
+.caja:nth-child(1) h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.caja:nth-child(2) h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.caja:nth-child(1) p{
+    color: white;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+.caja:nth-child(2) p{
+    color: white;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+
+@media(min-width:768px){
+    .caja p{
+        line-height:30px;
+    }
+}
+
+@media(min-width:1024px){
+    .contenido{
+        width: 1000px;
+        margin: auto;
+    }
+    .caja p{
+        line-height:30px;
+    }
+}
+
+@media(min-width:1280px){
+    .contenido{
+        width: 1280px;
+    }
+
+    .caja p{
+        font-size: 30px;
+    }
 }
