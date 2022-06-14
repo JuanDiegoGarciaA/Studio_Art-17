@@ -196,24 +196,25 @@ h2{
     display: inline-block;
     position: relative;
     color: white;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 h2::after, h2::before{
     content:'';
     position: absolute;
-    width: 100%;
+    width: 120px;
     height: 4px;
     background-color: white;
     top: 0.6em;
 }
 
 h2::before{
-    left: 140px;
+    left: 172px;
+    padding-right: 5px;
 }
 
 h2::after{
-    right: 140px;
+    right: 172px;
 }
 /* Estilos para galeria */
 
@@ -255,6 +256,7 @@ h2::after{
 .boton a{
     text-decoration: none;
     color: white;
+    background-color: #575757;
     font-size: 28px;
     border-radius: 20px;
     padding: 5px 20px;
@@ -262,8 +264,342 @@ h2::after{
 }
 
 .boton a:hover{
+    background: white;
     color: #575757;
-    background-color: white;
     padding: 10px 25px;
-    transition: .3s;
+    transition: .6s;
+}
+
+/* img center*/
+
+.img_center{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img_c{
+    max-width: 100%;
+}
+
+/*caja bordes*/
+
+.border{
+    border-style: none none solid none;
+    border-color: white;
+    border-width: 0px 0px .01px 0px;
+}
+
+/*Textos*/
+.preguntas{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+
+.parrafo{
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+    max-width: 25%;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 952px) {
+    .parrafo{
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .parrafo{
+        max-width: 50%;
+    }
+}
+
+/*footer*/
+footer{
+    background: linear-gradient(to bottom, black 75px, black 15px);
+}
+
+footer .redes-sociales{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    border-style: solid none solid none;
+    border-color: white;
+    border-width: .01px 0px .01px 0px;
+}
+
+footer .redes-sociales a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 100px;
+    transition: .3s ease all;
+    
+}
+
+
+footer .redes-sociales .facebook{
+    background: #405c9c;
+}
+
+footer .redes-sociales .instagram{
+    background: #c13584;
+}
+
+footer .redes-sociales .whatsapp{
+    background: #0df053;
+    transition: all 400ms ease-out;
+}
+
+footer .redes-sociales .whatsapp:hover{
+    background-color: #f3f3f3;
+    transform: scale(1.1);
+    color: #0df053;
+}
+
+footer .redes-sociales .instagram:hover{
+    background-color: #f3f3f3;
+    transform: scale(1.1);
+    color: #c13584;
+}
+
+footer .redes-sociales .facebook:hover{
+    background-color: #f3f3f3;
+    transform: scale(1.1);
+    color: #405c9c;
+}
+
+footer .redes-sociales a i{
+    font-size: 20px;
+    line-height: 60px;
+}
+
+footer .contenedor-icono:hover a{
+    animation: icono .5s ease;
+}
+
+@keyframes icono {
+    from{
+        transform: rotate3d(0,0,0,0);
+    }
+    to{
+        transform: rotate3d(1,1,1,360deg);
+    }
+}
+
+footer .creado-por{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 700px){
+    .grid .item{
+        width: calc(50% - 20px);
+    }
+
+    header .barra-busqueda{
+        width:100%;
+    }
+}
+
+/* ---------------------------------Seccion Tatuajes-----------------------------------------------*/
+
+.TextT{
+    font-size: 35px;
+    color: #fff;
+}
+.TextTa{
+    font-size: 35px;
+    color: #fff;
+    padding-top: 2%;
+    border-style: solid none none none;
+    border-color: white;
+    border-width: .01px 0px 0px 0px;
+}
+
+.TextTa a{
+    color: #c13584;
+}
+
+@media (min-width: 768px) {
+    .TextT{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .TextT{
+        font-size: 28px;
+    }
+}
+
+
+/* img centerT*/
+
+.img_centerT{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img_cT{
+    max-width: 300px;
+}
+
+/* ---------------------------------Seccion Citas-----------------------------------------------*/
+
+.center-form{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    float: left;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+}
+.form{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label{
+    color: #fff;
+}
+
+
+
+.center-form input{
+    width: 100%;
+    padding: 8px;
+    font-size: 1.2em;
+}
+
+.center-form label{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 20px 0;
+    justify-content: right;
+}
+
+.center-form input[type="submit"]{
+    text-decoration: none;
+    color: white;
+    background-color: #575757;
+    font-size: 28px;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+
+.center-form input[type="submit"]:hover{
+    background: white;
+    color: #575757;
+    padding: 10px 25px;
+    transition: .6s;
+}
+
+.center-form input[type="file"]{
+    text-decoration: none;
+    color: white;
+    background-color: #575757;
+    font-size: 28px;
+    border-radius: 20px;
+
+}
+
+
+.center-form input[type="file"]:hover{
+    background: white;
+    color: #575757;
+    padding: 10px 25px;
+    transition: .6s;
+}
+
+
+/* ---------------------------------Seccion preguntas-----------------------------------------------*/
+
+.contenido{
+    margin: 3px;
+    margin-top: 5%;
+}
+
+.caja{
+    display: table-cell;
+    padding: 10px;
+}
+
+.caja:nth-child(1) h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.caja:nth-child(2) h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.caja:nth-child(1) p{
+    color: white;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+.caja:nth-child(2) p{
+    color: white;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+
+@media(min-width:768px){
+    .caja p{
+        line-height:30px;
+    }
+}
+
+@media(min-width:1024px){
+    .contenido{
+        width: 1000px;
+        margin: auto;
+    }
+    .caja p{
+        line-height:30px;
+    }
+}
+
+@media(min-width:1280px){
+    .contenido{
+        width: 1280px;
+    }
+
+    .caja p{
+        font-size: 30px;
+    }
 }
